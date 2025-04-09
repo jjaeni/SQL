@@ -1,4 +1,4 @@
-/* member_id */
+-- with 구문 밖의 select절부터 gpt 도움
 with review_cnt as (
     select count(*) over (partition by M.member_id) as cnt, M.member_name,
     R.review_text, date_format(R.review_date, '%Y-%m-%d') as REVIEW_DATE
