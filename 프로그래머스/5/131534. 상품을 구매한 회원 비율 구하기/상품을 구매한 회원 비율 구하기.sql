@@ -1,4 +1,4 @@
--- 코드를 입력하세요
+-- 구매한 user가 중복될 수 있으니 distinct 처리 잊지말 것
 with user_filter as (
     select *
     from user_info
